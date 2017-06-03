@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Portal | Figuras Geométricas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">    
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-4">
+                    <nav>
+                        <h1> Figuras<br/> Planas</h1>
+                        <ul>
+                            <li><a href="home_iframe.html" target="frame">Home</a></li>
+                            <li><a href="triangulo.php" target="frame">Triângulo</a></li>
+                            <li><a href="quadrado.php" target="frame">Quadrado</a></li>
+                            <li><a href="retangulo.php" target="frame">Retângulo</a></li>
+                            <li><a href="losango.php" target="frame">Losango</a></li>
+                            <li><a href="circulo.php" target="frame">CÍrculo</a></li>
+                        </ul>
+                        <h1> Figuras<br/> Espaciais</h1>
+                        <ul>
+                            <li><a href="esfera.php" target="frame">Esfera</a></li>
+                            <li><a href="cone.php" target="frame">Cone</a></li>
+                            <li><a href="cilindro.php" target="frame">Cilindro</a></li>
+                            <li><a href="cubo.php" target="frame">Cubo</a></li>
+                            <li><a href="paralelepipedo.php" target="frame">Paralelepípedo</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-10 col-sm-9 col-xs-8">
+                    <iframe name="frame" src="home_iframe.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("a").click(function () {
+                    $("a").removeAttr("class");
+                    $(this).addClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>

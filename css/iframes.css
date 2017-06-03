@@ -1,0 +1,86 @@
+body{
+    padding: 0px;
+    margin: 0px 10px;
+    background-color: #fff;
+    background-image: url("../images/bg_iframe.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    text-align: center;
+}
+
+main{
+    background-color: rgba(192,192,192,0.8);
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main>div>h1 {
+    text-transform: uppercase;
+}
+
+.home{
+    text-align: center;
+    background-color: rgba(192,192,192,0.8);
+    padding: 0px 8%;
+    margin: 10px auto;
+    max-width: 650px;
+    border-radius: 10px;
+}
+
+.home>h1{
+    font-size: 50px;
+    color: red;
+    margin: 0px;
+}
+
+.creditos{
+    text-align: center;
+    background-color: rgba(192,192,192,0.8);
+    padding: 5px 2%;
+    margin: 10px auto;
+    max-width: 220px;
+    border-radius: 10px;
+}
+
+.creditos>h2{
+    font-size: 12px;
+    color: red;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-group{
+    text-align: left;
+}
+
+.btn{
+    margin-bottom: 5px;
+    min-width: 78px;
+}
+
+.resultado{
+    font-weight: 700; 
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#total{
+    background: #fff;
+    color: #5cb85c;
+    padding: 5px;
+}
+
+@media screen and (max-width: 320px) {
+    main>h1 {
+        font-size: 20px;
+    }
+
+    .home>h1{
+        font-size: 40px;
+        color: red
+    }
+}
